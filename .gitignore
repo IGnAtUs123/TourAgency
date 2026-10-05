@@ -30,6 +30,3 @@ Thumbs.db
 # Докер
 docker-compose.override.yml
 
-# Дампы БД (если храните локально)
-*.sql
-!docs/**/*.sql
