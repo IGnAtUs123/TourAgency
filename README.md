@@ -20,7 +20,7 @@
 
 ## Трекер задач
 
-Jira: `<ссылка на доску TA>`
+Jira: `https://elobaka-tours.atlassian.net/jira/software/projects/TA/boards/3?filter=&groupBy=none&atlOrigin=eyJpIjoiYTgyNjg2YzQyYzExNDc0OGEzZmVlZjdmMjZjZTZjYzQiLCJwIjoiaiJ9`
 
 ## Технологический стек
 
