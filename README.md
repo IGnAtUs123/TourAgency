@@ -71,3 +71,29 @@ travel-agency-system/
 | ER-диаграмма базы данных             | [`docs/data/er_diagram.png`](docs/data/er_diagram.png)                               |
 | Журнал архитектурных решений (ADR)   | [`docs/adr/001_architecture_style.md`](docs/adr/001_architecture_style.md)           |
 | Отчёт о практической работе №2 (PDF) | `docs/report/Отчет_о_практической_работе_2.pdf`                                      |
+
+## Запуск и тестирование
+
+### Запуск backend
+
+    cd backend
+    npm install
+    npm start
+
+Сервер доступен на http://localhost:3000.
+
+### Запуск frontend
+
+    cd frontend
+    npm install
+    npm run dev
+
+### Тест-кейсы health-check
+
+| №   | Действие                               | Ожидаемый результат                         |
+| --- | -------------------------------------- | ------------------------------------------- |
+| 1   | GET http://localhost:3000/api/health   | HTTP 200, в теле JSON с полем status = "ok" |
+| 2   | GET http://localhost:3000/api/unknown  | HTTP 404                                    |
+| 3   | Остановить backend, повторить запрос 1 | Соединение отклонено, ошибка подключения    |
+
+Проверка выполняется в Postman или командой `curl`.
