@@ -25,8 +25,8 @@ Jira: `https://elobaka-tours.atlassian.net/jira/software/projects/TA/boards/3?fi
 
 - Frontend: React.js
 - Backend: Express.js (Node.js)
-- СУБД: PostgreSQL
-- Контейнеризация: Docker, Docker Compose
+- СУБД: PostgreSQL (клиент: DBeaver)
+- Контейнеризация: Docker 24, Docker Compose
 - Репозиторий: GitHub
 - IDE: Visual Studio Code
 
