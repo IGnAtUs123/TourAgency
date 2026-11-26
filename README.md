@@ -26,7 +26,7 @@ Jira: `https://elobaka-tours.atlassian.net/jira/software/projects/TA/boards/3?fi
 - Frontend: React.js
 - Backend: Express.js 4 (Node.js 20)
 - СУБД: PostgreSQL 16 (клиент: DBeaver)
-- Контейнеризация: Docker 24, Docker Compose
+- Контейнеризация: Docker 24+, Docker Compose
 - Репозиторий: GitHub
 - IDE: Visual Studio Code
 
@@ -80,6 +80,8 @@ travel-agency-system/
     npm install
     npm start
 
+
+PostgreSQL для запуска текущей версии backend не требуется
 Сервер доступен на http://localhost:3000.
 
 ### Запуск frontend
@@ -90,10 +92,12 @@ travel-agency-system/
 
 ### Тест-кейсы health-check
 
-| №   | Действие                               | Ожидаемый результат                         |
-| --- | -------------------------------------- | ------------------------------------------- |
-| 1   | GET http://localhost:3000/api/health   | HTTP 200, в теле JSON с полем status = "ok" |
-| 2   | GET http://localhost:3000/api/unknown  | HTTP 404                                    |
-| 3   | Остановить backend, повторить запрос 1 | Соединение отклонено, ошибка подключения    |
+
+| №   | Действие                               | Ожидаемый результат                                                                     |
+| --- | -------------------------------------- | --------------------------------------------------------------------------------------- |
+| 1   | GET http://localhost:3000/api/health   | HTTP 200, в теле JSON с полем status = "ok"                                             |
+| 2   | GET http://localhost:3000/api/unknown  | HTTP 404                                                                                |
+| 3   | Остановить backend, повторить запрос 1 | Соединение отклонено, ошибка подключения, Остановить backend, повторить запрос 1 (curl) |
+
 
 Проверка выполняется в Postman или командой `curl`.
