@@ -1,0 +1,5 @@
+{
+  "backend/**/*.js": ["prettier --write", "eslint --max-warnings=0"],
+  "frontend/**/*.{js,jsx,css,html}": "prettier --write",
+  "*.{json,yml,yaml}": "prettier --write"
+}

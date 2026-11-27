@@ -1,8 +1,8 @@
-const express = require("express");
+const express = require('express');
 
 const app = express();
 app.use(express.json());
-app.use("/api", require("./routes/health"));
+app.use('/api', require('./routes/health'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
