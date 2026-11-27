@@ -1,0 +1,6 @@
+node_modules
+coverage
+docs
+*.md
+package-lock.json
+frontend/dist
